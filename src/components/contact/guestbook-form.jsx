@@ -40,7 +40,7 @@ const countChars = (value) => [...value.trim()].length;
  * GuestbookForm 컴포넌트
  *
  * Props:
- * @param {function} onSubmit - 등록 요청 함수, { isSuccess, error }를 반환 [Required]
+ * @param {function} onSubmit - 등록 요청 함수, { isSuccess, isApproved, error }를 반환 [Required]
  *
  * Example usage:
  * <GuestbookForm onSubmit={submitMessage} />
@@ -86,7 +86,12 @@ function GuestbookForm({ onSubmit }) {
       setEmoji(null);
       setHasTriedSubmit(false);
       startedAtRef.current = Date.now();
-      setNotice({ severity: 'success', text: '메시지가 등록되었습니다! 승인 후 방명록에 공개됩니다.' });
+      setNotice({
+        severity: 'success',
+        text: result.isApproved
+          ? '메시지가 등록되었습니다! 남겨주셔서 감사해요.'
+          : '메시지가 등록되었습니다! 확인 후 방명록에 공개됩니다.',
+      });
     } else {
       setNotice({ severity: 'error', text: result.error });
     }

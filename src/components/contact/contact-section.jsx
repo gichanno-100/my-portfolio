@@ -144,7 +144,7 @@ function ContactSection() {
           LEAVE YOUR MARK
         </Typography>
         <Typography sx={{ color: CONTACT_COLORS.textMuted, fontSize: '0.95rem', mb: 3 }}>
-          남겨주신 메시지는 확인 후 공개됩니다.
+          남겨주신 메시지는 바로 공개됩니다. 링크 등이 포함되면 확인 후 공개돼요.
         </Typography>
         <GuestbookForm onSubmit={ submitMessage } />
         <Box sx={{ borderTop: '1px solid', borderColor: CONTACT_COLORS.border, mt: 4, pt: 4 }}>
