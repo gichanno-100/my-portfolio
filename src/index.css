@@ -1,0 +1,41 @@
+/*
+ * 컬러 팔레트 (임시)
+ * '컬러 팔레트 디자인 시스템.md' 파일이 준비되면 아래 값만 교체하세요.
+ * theme.js의 colors 객체도 같은 값으로 맞춰야 합니다.
+ */
+:root {
+  --color-primary: #2d3a8c;
+  --color-primary-light: #5c6bc0;
+  --color-primary-dark: #1b2560;
+  --color-secondary: #ff7a59;
+  --color-secondary-light: #ffa58e;
+  --color-background: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-surface-tint: #eef0fb;
+  --color-text-primary: #1f2340;
+  --color-text-secondary: #5b6075;
+  --color-border: #e3e5f0;
+}
+
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML, Body 초기화 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* Root 앱 컨테이너 설정 */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
