@@ -1,5 +1,6 @@
 import Stack from '@mui/material/Stack';
 import SectionCard from '../components/ui/section-card.jsx';
+import ContactSection from '../components/contact/contact-section.jsx';
 
 const HOME_SECTIONS = [
   {
@@ -29,13 +30,6 @@ const HOME_SECTIONS = [
     title: 'Projects',
     description: "여기는 Projects 섹션입니다. 대표작 썸네일 3-4개와 '더 보기' 버튼이 들어갈 예정입니다.",
   },
-  {
-    id: 'contact',
-    label: 'Section 05',
-    title: 'Contact',
-    description: '여기는 Contact 섹션입니다. 연락처, SNS, 간단한 메시지 폼이 들어갈 예정입니다.',
-    variant: 'tint',
-  },
 ];
 
 function HomePage() {
@@ -44,6 +38,7 @@ function HomePage() {
       {HOME_SECTIONS.map((section) => (
         <SectionCard key={section.id} {...section} />
       ))}
+      <ContactSection />
     </Stack>
   );
 }
