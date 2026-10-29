@@ -26,7 +26,7 @@ function Navbar() {
           }}
         >
           <Typography variant="h6" sx={{ fontWeight: 700, letterSpacing: 0.5 }}>
-            My<Box component="span" sx={{ color: 'secondary.main' }}>Portfolio</Box>
+            My<Box component="span" sx={{ color: 'secondary.light' }}>Portfolio</Box>
           </Typography>
           <Box sx={{ display: 'flex', gap: { xs: 0.5, sm: 1 } }}>
             {NAV_ITEMS.map((item) => (

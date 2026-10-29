@@ -1,20 +1,20 @@
 /*
- * 컬러 팔레트 (임시)
- * '컬러 팔레트 디자인 시스템.md' 파일이 준비되면 아래 값만 교체하세요.
+ * 컬러 팔레트 (블랙&화이트 무채색)
+ * 색상을 바꾸려면 아래 값을 교체하세요.
  * theme.js의 colors 객체도 같은 값으로 맞춰야 합니다.
  */
 :root {
-  --color-primary: #2d3a8c;
-  --color-primary-light: #5c6bc0;
-  --color-primary-dark: #1b2560;
-  --color-secondary: #ff7a59;
-  --color-secondary-light: #ffa58e;
-  --color-background: #f6f7fb;
+  --color-primary: #111111;
+  --color-primary-light: #424242;
+  --color-primary-dark: #000000;
+  --color-secondary: #757575;
+  --color-secondary-light: #e0e0e0;
+  --color-background: #f5f5f5;
   --color-surface: #ffffff;
-  --color-surface-tint: #eef0fb;
-  --color-text-primary: #1f2340;
-  --color-text-secondary: #5b6075;
-  --color-border: #e3e5f0;
+  --color-surface-tint: #eeeeee;
+  --color-text-primary: #111111;
+  --color-text-secondary: #616161;
+  --color-border: #e0e0e0;
 }
 
 /* CSS 초기화 */

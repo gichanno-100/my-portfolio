@@ -2,17 +2,17 @@ import { createTheme } from '@mui/material/styles';
 
 // index.css의 CSS 변수와 동일한 값 (팔레트 교체 시 함께 수정)
 export const colors = {
-  primary: '#2d3a8c',
-  primaryLight: '#5c6bc0',
-  primaryDark: '#1b2560',
-  secondary: '#ff7a59',
-  secondaryLight: '#ffa58e',
-  background: '#f6f7fb',
+  primary: '#111111',
+  primaryLight: '#424242',
+  primaryDark: '#000000',
+  secondary: '#757575',
+  secondaryLight: '#e0e0e0',
+  background: '#f5f5f5',
   surface: '#ffffff',
-  surfaceTint: '#eef0fb',
-  textPrimary: '#1f2340',
-  textSecondary: '#5b6075',
-  border: '#e3e5f0',
+  surfaceTint: '#eeeeee',
+  textPrimary: '#111111',
+  textSecondary: '#616161',
+  border: '#e0e0e0',
 };
 
 const theme = createTheme({
